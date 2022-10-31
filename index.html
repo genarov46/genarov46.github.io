@@ -1,9 +1,162 @@
+<!DOCTYPE html>
 <html>
- 
-<body>
-  <h1>Hi, I'm Genaro</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
-</body>
- 
+  <head>
+    <title>My Own Cheat Sheet</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <h1>My Cheat Sheet Project</h1>
+    <h2>The Box Model</h2>
+    <p>
+      The CSS box model as a whole applies to block boxes and defines how the
+      different parts of a box — margin, border, padding, and content — work
+      together to create a box that you can see on a page.
+    </p>
+    <table class="box model">
+      <tr>
+        <th>Parts Of A Box</th>
+        <th>Description</th>
+        <th>Sizing Property</th>
+      </tr>
+      <tr class="content">
+        <td>Content Box</td>
+        <td>The area where your content is displayed.</td>
+        <td>
+          <ul>
+            <li>inline-size</li>
+            <li>block-size</li>
+            <li>width</li>
+            <li>height</li>
+          </ul>
+        </td>
+      </tr>
+      <tr class="description">
+        <td>Padding Box</td>
+        <td>The padding sits around the content as white space.</td>
+        <td>
+          <ul>
+            <li>padding</li>
+            <li>related properties</li>
+          </ul>
+        </td>
+      </tr>
+      <tr class="sizing">
+        <td>Border Box</td>
+        <td>The border box wraps the content and any padding.</td>
+        <td>
+          <ul>
+            <li>border</li>
+            <li>related properties</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Margin box</td>
+        <td>
+          The margin is the outermost layer, wrapping the content, padding, and
+          border as whitespace between this box and other elements.
+        </td>
+        <td>
+          <ul>
+            <li>margin</li>
+            <li>related properties</li>
+          </ul>
+        </td>
+      </tr>
+    </table>
+    <h1>Syntaxes, For Writing Box Model CSS Code</h1>
+    <table class="syntax">
+      <tr>
+        <th>Inline CSS</th>
+        <th>Internal Style Sheets</th>
+        <th>Ruleset</th>
+      </tr>
+      <tr>
+        <td>
+          <ul class="inline">
+            <li>
+              It’s possible to write CSS code directly within HTML code using
+              inline styles.
+            </li>
+            <li>
+              This code &lt;p style="color: red">I'm learning to code!&lt;/p>
+              renders:
+            </li>
+            <li><p style="color: red">I'm learning to code!</p></li>
+            <li>
+              The style attribute is addded within the HTML element's opening
+              tag
+            </li>
+            <li>
+              It’s important to know that inline styles are a quick way of
+              directly styling an HTML element, but are rarely used when
+              creating websites.
+            </li>
+          </ul>
+        </td>
+        <td>
+          <ul class="Internal">
+            <li>CSS code can be written in an HTML file by enclosing the code in &lt;style> tags.
+            Code surrounded by &lt;style> tags will be interpreted as CSS syntax.</li>
+            <li>
+              &lt;head> &lt;style> p { color: red; font-size: 20px; }
+              &lt;/style> &lt;/head>
+            </li>
+            <li>
+              Note how the syntax of the CSS code matches (for the most part)
+              the syntax you used for inline styling. The main difference is
+              that you can specify which elements to apply the styling.
+            </li>
+            <li>
+              An internal stylesheet has certain benefits and use cases over
+              inlines styles, but once again, it’s not best practice
+            </li>
+          </ul>
+        </td>
+        <td>
+          <ul class="ruleset">
+            <li>
+              Developers avoid mixing code by storing HTML and CSS code in
+              separate files (HTML files contain only HTML code, and CSS files
+              contain only CSS code).
+            </li>
+            <li>
+              You can create an external stylesheet by using the .css file name
+              extension, like so: style.css
+            </li>
+            <li>
+              You can use the &lt;link /> element to link HTML and CSS files
+              together. The &lt;link /> element must be placed within the head of
+              the HTML file. It is a self-closing tag and requires the following
+              attributes:
+              <ol>
+                <li>
+                  href — like the anchor element, the value of this attribute
+                  must be the address, or path, to the CSS file.
+                </li>
+                <li>
+                  rel — this attribute describes the relationship between the
+                  HTML file and the CSS file. Because you are linking to a
+                  stylesheet, the value should be set to stylesheet.
+                </li>
+              </ol>
+            </li>
+            <li>
+              A URL path would look like this
+              &lt;link
+                href="https://www.codecademy.com/stylesheets/style.css"
+                rel="stylesheet"
+              />
+            </li>
+            <li>
+              If your CSS and HTML file are in the same directory or local file
+              you can specify a relative path like this:
+              &lt;link href="./style.css" rel="stylesheet" />
+            </li>
+          </ul>
+        </td>
+      </tr>
+    </table>
+  </body>
 </html>

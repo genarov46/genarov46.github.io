@@ -1,0 +1,32 @@
+table, td {
+    border: 1px solid black;
+    width: 40
+    %;
+    text-align: left;
+    text-align: top;
+    margin: auto;
+}
+h2 {
+    text-align:center;
+    color: darkblue;
+}
+th {
+    border-width: medium;
+    background-color: aqua;
+}
+h1 {
+    text-align: center;
+    color: darkblue;
+}
+p {
+    font-color: black;
+    text-align:center;
+}
+.syntax {
+    width: 30
+    %;
+}
+th {
+    text-align: center;
+    border: 2px solid black;
+}
